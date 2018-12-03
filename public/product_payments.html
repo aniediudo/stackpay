@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paystack</title>
+    <meta name="description" content="Accept payments online with Paystack">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <nav class="global-nav global-nav--transparent">
+        <div class="container">
+            <div class="global-nav__left">
+                <a href="index.html" class="global-nav__logo">
+                    <img src="images/logo.svg" alt="Paystack">
+                </a>
+            </div>
+            <div class="global-nav__right">
+                <ul class="global-nav__menu">
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="product.html">Product</a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_payments.html">Payments</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_developers.html">Developers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="product_fraud.html">Fraud</a>
+                            </li>
+                            <li class="global-dropdown-menu__divider"></li>
+                            <li class="global-dropdown-menu__item global-dropdown-menu__item--muted">
+                                <a href="product.html">Home</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__item"><a href="pricing.html">Pricing</a></li>
+                    <li class="global-nav__item"><a href="https://developers.paystack.co" target="_blank">Docs</a></li>
+                    <li class="global-nav__item global-nav__item--has-dropdown">
+                        <a href="#">
+                            Company
+                        </a>
+                        <ul class="global-dropdown-menu">
+                            <li class="global-dropdown-menu__item">
+                                <a href="company.html">About</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="brand.html">Brand</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="careers.html">Careers</a>
+                            </li>
+                            <li class="global-dropdown-menu__item">
+                                <a href="https://blog.paystack.com">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="global-nav__button">
+                        <a href="#" class="button button--default-white button--rounded">
+                            Log In
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="feature-header">
+        <div class="container">
+            <h1 class="feature-header__primary-title">Payments</h1>
+        </div>
+    </section>
+    <section class="feature-nav">
+        <div class="container">
+            <ul class="feature-nav-menu">
+                <li class="feature-nav-menu__item"><a href="#channels">Channels</a></li>
+                <li class="feature-nav-menu__item"><a href="#payment-pages">Payment Pages</a></li>
+                <li class="feature-nav-menu__item"><a href="#marketplaces">Marketplaces</a></li>
+                <li class="feature-nav-menu__item"><a href="#multicurrency">Multicurrency</a></li>
+                <li class="feature-nav-menu__item"><a href="#integrations">Integrations</a></li>
+                <li class="feature-nav-menu__item feature-nav-menu__item--action"><a href="">Sign Up</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="feature-section feature-section--light feature-section--has-padding" id="channels">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--8 grid__column--centered global-u-text-center">
+                    <div class="feature-section__header">
+                        <h4 class="feature-section-header__label">Multiple Channels</h4>
+                        <h2 class="feature-section-header__primary-title">We've done all the heavy lifting such that you can immediately start accepting payments across all channels </h2>
+                    </div>
+                    <div class="feature-section__content">
+                        <div class="grid">
+                            <div class="grid__column grid__column--4">
+                                <div class="breakdown-card">
+                                    <div class="breakdown-card__icon">
+                                        <div class="svg svg--cards"></div>
+                                    </div>
+                                    <h3 class="global-u-body-title">Card Payments</h3>
+                                    <p class="global-u-body-text">Receive payments from verve, visa and mastercard branded debit cards.</p>
+                                </div>
+                            </div>
+                            <div class="grid__column grid__column--4">
+                                <div class="breakdown-card">
+                                    <div class="breakdown-card__icon">
+                                        <div class="svg svg--safe"></div>
+                                    </div>
+                                    <h3 class="global-u-body-title">Bank Accounts <small>(soon)</small></h3>
+                                    <p class="global-u-body-text">Get paid with direct debit and internet banking integrations.</p>
+                                </div>
+                            </div>
+                            <div class="grid__column grid__column--4">
+                                <div class="breakdown-card">
+                                    <div class="breakdown-card__icon">
+                                        <div class="svg svg--ussd"></div>
+                                    </div>
+                                    <h3 class="global-u-body-title">USSD <small>(soon)</small></h3>
+                                    <p class="global-u-body-text">Run your offline collections, and supercharge your pay on delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-section feature-section--dark feature-section--has-padding" id="payment-pages">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--6">
+                    <div class="pages-animation" id="pages-animation" style="opacity: 0;">
+                        <div class="pages-animation__form" id="pages-animation__form">
+                            <div class="pages-animation__form-group">
+                                <label for="link">Choose your link</label>
+                                <input type="text" id="link" value="paystack.com/pay/my-link" disabled>
+                            </div>
+                            <div class="pages-animation__form-group">
+                                <label for="price">Set the price</label>
+                                <input type="text" id="price" value="NGN 1,000" disabled>
+                            </div>
+                            <div class="pages-animation__form-group">
+                                <label for="extras">Collect extra information</label>
+                                <input type="text" id="extras" value="Color, Staff Id" disabled>
+                            </div>
+                            <div class="pages-animation__form-group">
+                                <label for="success">After successful payment</label>
+                                <input type="text" id="success" value="Say thank you" disabled>
+                            </div>
+                        </div>
+                        <div class="pages-animation__success" id="pages-animation__success">
+                            <figure class="pages-animation__icon">
+                                <img src="images/icons/source/cheers.svg" class="icon" />
+                            </figure>
+                            <h3>Congrats</h3>
+                            <p>Your customers can now pay for your product by visiting paystack.com/pay/my-link</p>
+                            <div class="pages-animation__call-to-action">
+                                <a href="https://paystack.com/pay/demo" target="_blank" class="button button--green">See an example</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--6">
+                    <h4 class="feature-section-header__label">HOSTED PAYMENT PAGES</h4>
+                    <h2 class="feature-section-header__primary-title">With no coding required, you can accept payments from your product or service with our payment pages.</h2>
+                    <p class="global-u-body-excerpt">Put your products, services and subscriptions up for sale on the internet without writing code. Create a payment page from the dashboard and customize it to suit your needs.</p>
+                    <ul class="setup-steps-container">
+                        <li class="setup-step setup-step--list">
+                            <div class="setup-step__number"><span></span><span></span></div>
+                            <p class="setup-step__title">Use it for one time payments or subscriptions</p>
+                        </li>
+                        <li class="setup-step setup-step--list">
+                            <div class="setup-step__number"><span></span><span></span></div>
+                            <p class="setup-step__title">Set fixed or variable payment amounts</p>
+                        </li>
+                        <li class="setup-step setup-step--list">
+                            <div class="setup-step__number"><span></span><span></span></div>
+                            <p class="setup-step__title">Collect as much extra information as you need</p>
+                        </li>
+                        <li class="setup-step setup-step--list">
+                            <div class="setup-step__number"><span></span><span></span></div>
+                            <p class="setup-step__title">Create memorable links using custom URLs</p>
+                        </li>
+                        <li class="setup-step setup-step--list">
+                            <div class="setup-step__number"><span></span><span></span></div>
+                            <p class="setup-step__title">Optional thank you message or redirect after payment</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-section feature-section--light feature-section--has-padding" id="marketplaces">
+        <div class="container">
+            <div class="grid grid--with-gutters">
+                <div class="grid__column grid__column--6 grid__column--centered global-u-text-center">
+                    <div class="feature-section-header feature-section-header--padded">
+                        <h4 class="feature-section-header__label">MARKETPLACES</h4>
+                        <h2 class="feature-section-header__primary-title">Do you run a platform of sellers you want to be able to pay automatically? Paystack supports it right out of the box.</h2>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="breakdown-card breakdown-card--no-padding">
+                        <div class="breakdown-card__icon">
+                            <div class="svg svg--people"></div>
+                        </div>
+                        <h3 class="global-u-body-title">Setup subaccounts</h3>
+                        <p class="global-u-body-text">Setup seller accounts as subaccounts using the API or your Paystack dashboard.</p>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="breakdown-card breakdown-card--no-padding">
+                        <div class="breakdown-card__icon">
+                            <div class="svg svg--calculator"></div>
+                        </div>
+                        <h3 class="global-u-body-title">Decide split</h3>
+                        <p class="global-u-body-text">As you create the subaccount, you choose what percentage of the money they get.</p>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="breakdown-card breakdown-card--no-padding">
+                        <div class="breakdown-card__icon">
+                            <div class="svg svg--split"></div>
+                        </div>
+                        <h3 class="global-u-body-title">Percentage or Fixed</h3>
+                        <p class="global-u-body-text">You can also override the fixed percentage on every charge by passing a aplit amount.</p>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="breakdown-card breakdown-card--no-padding">
+                        <div class="breakdown-card__icon">
+                            <div class="svg svg--next-day-payouts"></div>
+                        </div>
+                        <h3 class="global-u-body-title">Automatic Payouts</h3>
+                        <p class="global-u-body-text">Once payment is done, Paystack automatically pays both you and the other seller what is due.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-section feature-section--has-padding" id="multicurrency">
+        <div class="container">
+            <div class="grid grid--with-gutters">
+                <div class="grid__column grid__column--6 global-u-text-center-s">
+                    <h5 class="feature-section-header__label">MULTICURRENCY SUPPORT</h5>
+                    <h3 class="feature-section-header__primary-title">We accept payments in USD, GBP and some other currencies. Your customers in other countries won't be cut off.</h3>
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="feature-section-illustration feature-section-illustration--multicurrency">
+                        <img src="images/payments/multicurrency.png" class="illustration" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-section feature-section--dark feature-section--has-padding" id="integrations">
+        <div class="container">
+            <div class="grid grid--with-gutters">
+                <div class="grid__column grid__column--6 grid__column--centered global-u-text-center">
+                    <h4 class="feature-section-header__label">INTEGRATIONS</h4>
+                    <h2 class="feature-section-header__primary-title">Paystack integrates with popular business services to deliver a more satisfying customer experience.</h2>
+                </div>
+            </div>
+            <div class="feature-section__content grid">
+                <div class="grid__column grid__column--3">
+                    <div class="feature-item feature-item--dark">
+                        <div class="feature-item__icon">
+                            <img src="images/payments/plugins/shopify.svg" class="icon" />
+                        </div>
+                        <h3 class="feature-item__title">Shopify</h3>
+                        <p class="feature-item__description">Integrate your shopify site with Paystack.</p>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="feature-item feature-item--dark">
+                        <div class="feature-item__icon">
+                            <img src="images/payments/plugins/woocommerce.svg" class="icon" />
+                        </div>
+                        <h3 class="feature-item__title">Woocomerce</h3>
+                        <p class="feature-item__description">Accept payments on your Woocommerce store.</p>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="feature-item feature-item--dark">
+                        <div class="feature-item__icon">
+                            <img src="images/payments/plugins/sage.svg" class="icon" />
+                        </div>
+                        <h3 class="feature-item__title">Sage</h3>
+                        <p class="feature-item__description">Update your books when you receive funds (Soon).</p>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3">
+                    <div class="feature-item feature-item--dark">
+                        <div class="feature-item__icon">
+                            <img src="images/payments/plugins/xero.svg" class="icon" />
+                        </div>
+                        <h3 class="feature-item__title">Xero</h3>
+                        <p class="feature-item__description">Invoice and update your account (Soon).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="global-signup">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__column grid__column--6 grid__column--centered">
+                    <h2 class="global-signup__primary-title">
+                        Sign Up. Go Live. Get Paid.
+                    </h2>
+                    <h3 class="global-signup__secondary-title">
+                        Paystack is an easy to setup, complete payments solution for your business. Ready to try it out?
+                    </h3>
+                    <ul class="global-signup__call-to-action">
+                        <li class="global-signup__button">
+                            <a class="button button--green" href="/">Create Account</a>
+                        </li>
+                        <li class="global-signup__button">
+                            <a class="button button--default" href="/">Try a demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="global-footer">
+        <div class="container">
+            <div class="global-footer__grid grid">
+                <div class="grid__column grid__column--3 grid__column--6-s">
+                    <div class="global-footer__menu-container">
+                        <h4 class="global-footer__menu-header">Solutions</h4>
+                        <ul class="global-footer__menu">
+                            <li><a href="">Payments</a></li>
+                            <li><a href="">Subscriptions</a></li>
+                            <li><a href="">Business Tools</a></li>
+                            <li><a href="">Developer Tools</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--3 grid__column--6-s">
+                    <h4 class="global-footer__menu-header">Resources</h4>
+                    <ul class="global-footer__menu">
+                        <li><a href="">Demo</a></li>
+                        <li><a href="">Slack</a></li>
+                        <li><a href="">API Documentation</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+                <div class="grid__column grid__column--6">
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">San Francisco</h4>
+                        <p class="global-footer__address">1281 Lawrence Station Road, Sunnyvale, California.</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <h4 class="global-footer__menu-header">Lagos</h4>
+                        <p class="global-footer__address">22A, Olatunbosun Str, Shonibare Estate, Ikeja. Lagos</p>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a href="" class="global-footer__contact">hello@paystack.com</a>
+                    </div>
+                    <div class="grid__column grid__column--6 grid__column--6-s">
+                        <a href="" class="global-footer__contact">+234 908 566 2909</a>
+                    </div>
+                </div>
+                <div class="grid__column grid__column--12">
+                    <div class="global-footer__copyright">© 2016, Paystack Payments Limited</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor/animate.min.js"></script>
+    <script src="js/vendor/waypoints.min.js"></script>
+    <script src="js/pages-animation.js"></script>
+    <script>
+    window.onload = function() {
+        var playedPageDemo;
+        var waypoint = new Waypoint({
+            element: document.getElementById('pages-animation'),
+            handler: function(direction) {
+                if (!playedPageDemo) {
+                    playedPageDemo = true;
+                    demoPaymentPages();
+                }
+            },
+            offset: '75%'
+        });
+    }
+    </script>
+</body>
+
+</html>
